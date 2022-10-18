@@ -67,14 +67,18 @@ Roll 1d16 and compare to the list of Chance cards
 </li>
 <li>
 Communicate board changes to all other players
+</li>
 </ol>
 
 ### Cheating
 
 <p>
 The main area for cheating is in the dice rolling. Without a central server to perform a dice roll, players will need to<br>
-roll dice themselves, allowing players to falsify numbers. Since all other board changes are public, this is the only <br>
-real opportunity for cheating. 
+roll dice themselves, allowing players to falsify numbers. Since all other board changes are public, this is one of the only <br>
+easy opportunities for cheating. <br>
+
+Another potential avenue for cheating lies in identity verification. A user may create multiple email accounts and use them <br>
+to influence the game in favor of one particular account. 
 </p>
 
 ### Anti-Cheat Measures
@@ -87,4 +91,14 @@ is in player control, and a screengrab of the recieved time can be shared by ind
 (examples of such email metadata can be found in this article on forensic email analysis: https://www.metaspike.com/timestamps-forensic-email-examination/
 </p>
 
+<p>
+  To solve the multiple accounts issue, more stringent player verification needs to take place. Submitting a social media account, or some PII<br>
+  would help raise the barrier to entry for games. Depending on the number of individuals playing, random group assignment could control for<br>
+  users creating multiple accounts; if 100 players want to play Monopoly, the chance of any 2 accounts being part of the same 4 person game<br>
+  is quite low. 
+</p>
+
+### Discussion Partners
+
+Thanks to fellow ETHDen/Encode Club learner icculus.lyx (https://github.com/icculus479) for helping to think through this process!  
 
