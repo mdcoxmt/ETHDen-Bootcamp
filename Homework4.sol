@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: None
+
 pragma solidity ^0.8.0;
 
 
@@ -25,7 +27,8 @@ contract VolcanoCoin {
         address hodler;
     }
 
-    payment[] pmtTracking;
+    payment[] public transfers;
+    mapping(address => payment[]) public pmtTracking;
 
     function whatSupply() public view returns (uint256){
         return supply;
@@ -41,7 +44,7 @@ contract VolcanoCoin {
         require(balances[msg.sender] <= _amt, "Get More Money");
         balances[msg.sender] -= _amt;
         balances[_rcpt] += _amt;
-        pmtTracking.push(payment({payAmt: _amt, hodler: _rcpt}));
+        transfers.push(payment({payAmt: _amt, hodler: _rcpt}));
         emit transferbb(msg.sender, _amt, _rcpt);
     }
 
