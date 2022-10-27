@@ -48,9 +48,7 @@ contract VolcanoCoin is Ownable {
         return pmtTracking[user];
     }
 
-    function pmtRecord(address _sender, uint256 _payAmt, address _hodler) public {
-        pmtTracking[msg.sender].sender = _sender;
-        pmtTracking[msg.sender].payAmt = _payAmt;
-        pmtTracking[msg.sender].hodler = _hodler;
+    function pmtRecord(address _sender, uint256 _payAmt, address _hodler) internal {
+        pmtTracking[_sender].push(payment(_sender, _payAmt, _hodler));
     }
 }
