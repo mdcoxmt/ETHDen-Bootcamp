@@ -7,7 +7,6 @@ pragma solidity ^0.8.0;
 contract VolcanoCoin is Ownable {
 
     uint256 supply = 10000;
-    /*address owner;*/
     event changeSupply(uint256 indexed);
     event transferbb(address, uint256, address);
     mapping(address=>uint256) public balances;
@@ -16,11 +15,6 @@ contract VolcanoCoin is Ownable {
     constructor() {
       balances[owner()] = supply;  
    }
-
-  /* modifier onlyOwner {
-      require(msg.sender == owner);
-      _;
-   }*/
 
     struct payment {
         uint256 payAmt;
