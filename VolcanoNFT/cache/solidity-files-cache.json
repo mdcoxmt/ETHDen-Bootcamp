@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/dcox/Documents/GitHub/ETHDen-Bootcamp/VolcanoNFT/contracts/VolcanoNFT.sol": {
-      "lastModificationDate": 1668113324475,
-      "contentHash": "caa19b0a3a3b0416205d46a690b9d041",
+      "lastModificationDate": 1668392651024,
+      "contentHash": "f933cc185c5305b480e0d54da6ccf867",
       "sourceName": "contracts/VolcanoNFT.sol",
       "solcConfig": {
         "version": "0.8.1",
@@ -37,6 +37,41 @@
       ],
       "artifacts": [
         "VolcanoNFT"
+      ]
+    },
+    "/Users/dcox/Documents/GitHub/ETHDen-Bootcamp/VolcanoNFT/node_modules/@openzeppelin/contracts/utils/Counters.sol": {
+      "lastModificationDate": 1668037569418,
+      "contentHash": "74654e3ae5d7f39555055dfe244dab7a",
+      "sourceName": "@openzeppelin/contracts/utils/Counters.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Counters"
       ]
     },
     "/Users/dcox/Documents/GitHub/ETHDen-Bootcamp/VolcanoNFT/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
@@ -82,111 +117,6 @@
         "ERC721"
       ]
     },
-    "/Users/dcox/Documents/GitHub/ETHDen-Bootcamp/VolcanoNFT/node_modules/@openzeppelin/contracts/utils/Counters.sol": {
-      "lastModificationDate": 1668037569418,
-      "contentHash": "74654e3ae5d7f39555055dfe244dab7a",
-      "sourceName": "@openzeppelin/contracts/utils/Counters.sol",
-      "solcConfig": {
-        "version": "0.8.1",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "Counters"
-      ]
-    },
-    "/Users/dcox/Documents/GitHub/ETHDen-Bootcamp/VolcanoNFT/node_modules/@openzeppelin/contracts/utils/Context.sol": {
-      "lastModificationDate": 1668037569418,
-      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
-      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
-      "solcConfig": {
-        "version": "0.8.1",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "Context"
-      ]
-    },
-    "/Users/dcox/Documents/GitHub/ETHDen-Bootcamp/VolcanoNFT/node_modules/@openzeppelin/contracts/utils/Address.sol": {
-      "lastModificationDate": 1668037569416,
-      "contentHash": "f31ad6fc4bbf9c06203987220156a6ba",
-      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
-      "solcConfig": {
-        "version": "0.8.1",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.1"
-      ],
-      "artifacts": [
-        "Address"
-      ]
-    },
     "/Users/dcox/Documents/GitHub/ETHDen-Bootcamp/VolcanoNFT/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
       "lastModificationDate": 1668037569441,
       "contentHash": "396031251978f8febfd90cb62cb240ec",
@@ -224,6 +154,111 @@
         "Strings"
       ]
     },
+    "/Users/dcox/Documents/GitHub/ETHDen-Bootcamp/VolcanoNFT/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1668037569435,
+      "contentHash": "c22d4395e33763de693fd440c6fd10e1",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "/Users/dcox/Documents/GitHub/ETHDen-Bootcamp/VolcanoNFT/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1668037569416,
+      "contentHash": "f31ad6fc4bbf9c06203987220156a6ba",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/dcox/Documents/GitHub/ETHDen-Bootcamp/VolcanoNFT/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1668037569418,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
     "/Users/dcox/Documents/GitHub/ETHDen-Bootcamp/VolcanoNFT/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
       "lastModificationDate": 1668037569434,
       "contentHash": "eb7e61db29f31d88b3c1cef1b063d338",
@@ -259,41 +294,6 @@
       ],
       "artifacts": [
         "IERC721"
-      ]
-    },
-    "/Users/dcox/Documents/GitHub/ETHDen-Bootcamp/VolcanoNFT/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
-      "lastModificationDate": 1668037569435,
-      "contentHash": "c22d4395e33763de693fd440c6fd10e1",
-      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
-      "solcConfig": {
-        "version": "0.8.1",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IERC721Receiver"
       ]
     },
     "/Users/dcox/Documents/GitHub/ETHDen-Bootcamp/VolcanoNFT/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol": {

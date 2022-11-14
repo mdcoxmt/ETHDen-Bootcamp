@@ -1,26 +1,17 @@
 const { expect } = require('chai');
 const { ethers } = require("hardhat")
 
-describe("VolcanoNFT Tests", function() {
+const { task } = require("hardhat/config");
+const { getAccount } = require("./helpers");
 
-    this.beforeEach(async function() {
-      const VolcanoNFT = await ethers.getContractFactory("VolcanoNFT");
-      volcanoNFT = await VolcanoNFT.deploy();
 
-    })
+task("check-balance", "Prints out the balance of your account").setAction(async function (taskArguments, hre) {
+    const account = getAccount();
+    console.log(`Account balance for ${account.address}: ${await account.getBalance()}`);
+});
 
-    it("NFT is Minted", async function() {
-      [account1] = await ethers.getSigners();
-      
-      expect(await volcanoNFT.balanceOf(account1.address)).to.equal(0);
-
-      const tx = await volcanoNFT.connect(account1).mint();
-
-      expect(await volcanoNFT.balanceOf(account1.address)).to.equal(1);
-    })
-
-   // it("NFT is Transferred", async function() {
-
-  //  })
-
-})
+task("deploy", "Deploys the VolcanoNFT.sol contract").setAction(async function (taskArguments, hre) {
+    const nftContractFactory = await hre.ethers.getContractFactory("VolcanoNFT", getAccount());
+    const nft = await nftContractFactory.deploy();
+    console.log(`Contract deployed to address: ${nft.address}`);
+});
