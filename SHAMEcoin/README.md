@@ -1,13 +1,3 @@
-# Sample Hardhat Project
+# SHAMEcoin
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+This contract creates 'SHM', a token that is undesirable. Only the contract admin can transfer to a particular address. Only the contract admin can run transferFrom, and only with approval from the address holder. 
