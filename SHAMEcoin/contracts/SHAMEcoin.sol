@@ -1,51 +1,43 @@
 // SPDX-License-Identifier: None
-import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.17;
 
-contract VolcanoCoin is Ownable, ERC20 {
-
-    
-    uint256 supply = 10000;
-    event changeSupply(uint256 indexed);
-    event transferbb(address, uint256, address);
-    
+contract SHAMEcoin is ERC20, Ownable {
 
     constructor(uint256 initialSupply) ERC20("SHAME", "SHM"){
-    owner()= msg.sender;
-    _mint(owner(), initialSupply);
+    _mint(msg.sender, initialSupply);
    }
-
-    payment[] public transfers;
-    mapping(address => payment[]) public pmtTracking;
     
-    function decimals() public view virtual override returns (uint8) {
+    function decimals() public view override returns (uint8) {
         return 0;
     }
 
-    function transfer(address recipient) public virtual override returns (bool) {
-        if msg.sender = owner(){
-            _transfer(owner(), recipient, 1)
+    function transfer(address recipient, uint256 amount) public override returns (bool) {
+        require (amount == 1);
+        if (msg.sender == owner()){
+            _transfer(owner(), recipient, 1);
         }
         else {
-            _transfer(owner(), msg.sender, 1)
+            _transfer(owner(), msg.sender, 1);
         }
         return true;
     }
 
-    function transferFrom(address sender) public virtual override returns (bool) {
-        require msg.sender = owner();
-        uint256 currentAllowance = _allowances[sender][_msgSender()];
+    function transferFrom(address shameHodler, address DEAD, uint256 amount) public override returns (bool) {
+        require (msg.sender == owner());
+        uint256 currentAllowance = allowance(shameHodler, owner());
         require(currentAllowance >= 1, "ERC20: transfer amount exceeds allowance");
-        _transfer(sender, recipient, );
-        _approve(sender, _msgSender(), currentAllowance - 1);
+        _burn(shameHodler, 1);
+        _approve(shameHodler, _msgSender(), currentAllowance - 1);
 
         return true;
     }
 
-       function approve(uint256 amount) public virtual override returns (bool) {
-        _approve(_msgSender(), owner(), 1);
+       function approve(address hodler, uint256 amount) public override returns (bool) {
+        require (msg.sender == hodler);
+        _approve(_msgSender(), owner(), amount);
         return true;
     }
 
